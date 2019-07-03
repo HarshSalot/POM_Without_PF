@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="hub spot regression Test">
+    <classes>
+      <class name="com.hotspot.tests.LoginPageTest"/>
+      <class name="com.hotspot.tests.HomePageTest"/>
+    </classes>
+  </test> <!-- hub spot regression Test -->
+  <test name="hub spot regression Test(failed)">
+    <classes>
+      <class name="com.hotspot.tests.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyLoggedInUserAccountNameTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hotspot.tests.HomePageTest -->
+      <class name="com.hotspot.tests.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hotspot.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- hub spot regression Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
