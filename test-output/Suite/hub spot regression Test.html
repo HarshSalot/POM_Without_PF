@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>hub spot regression Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 03 10:34:35 EDT 2019</td>
+<td>Started on:</td><td>Wed Jul 10 20:19:14 EDT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>54 seconds (54700 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16437 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,34 +75,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.hotspot.tests.HomePageTest.verifyLoggedInUserAccountNameTest()'><b>verifyLoggedInUserAccountNameTest</b><br>Test class: com.hotspot.tests.HomePageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[@class=&apos;account-name &apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-O680H5P2&apos;, ip: &apos;192.168.0.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\HPUSER~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50478}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: 6c8565455ba290fb3d5946cc6d9cfb13
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.hubspot.pages.HomePage.getLoggedInAccountValue(HomePage.java:42)
-	at com.hotspot.tests.HomePageTest.verifyLoggedInUserAccountNameTest(HomePageTest.java:46)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1932536213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1932536213'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[@class=&apos;account-name &apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-O680H5P2&apos;, ip: &apos;192.168.0.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\HPUSER~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50478}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: 6c8565455ba290fb3d5946cc6d9cfb13
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.hubspot.pages.HomePage.getLoggedInAccountValue(HomePage.java:42)
-	at com.hotspot.tests.HomePageTest.verifyLoggedInUserAccountNameTest(HomePageTest.java:46)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+<td title='com.hubspot.tests.LoginPageTest.getBrokenLinkTest()'><b>getBrokenLinkTest</b><br>Test class: com.hubspot.tests.LoginPageTest</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at com.hubspot.listeners.ExtentReportListener.onTestStart(ExtentReportListener.java:69)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1597425891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1597425891'><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at com.hubspot.listeners.ExtentReportListener.onTestStart(ExtentReportListener.java:69)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1702)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:620)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -122,26 +105,39 @@ Session ID: 6c8565455ba290fb3d5946cc6d9cfb13
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
-<td>10</td>
-<td>com.hotspot.tests.HomePageTest@1134affc</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.hotspot.tests.LoginPageTest.getAllLinkTest()'><b>getAllLinkTest</b><br>Test class: com.hotspot.tests.LoginPageTest</td>
-<td></td>
 <td>0</td>
-<td>com.hotspot.tests.LoginPageTest@56cbfb61</td></tr>
+<td>com.hubspot.tests.LoginPageTest@473b3b7a</td></tr>
 <tr>
-<td title='com.hotspot.tests.HomePageTest.verifyHomePageTitle()'><b>verifyHomePageTitle</b><br>Test class: com.hotspot.tests.HomePageTest</td>
-<td></td>
-<td>1</td>
-<td>com.hotspot.tests.HomePageTest@1134affc</td></tr>
+<td title='com.hubspot.tests.LoginPageTest.getBrokenLinkTest()'><b>getBrokenLinkTest</b><br>Test class: com.hubspot.tests.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.hubspot.listeners.ExtentReportListener.onTestFailure(ExtentReportListener.java:95)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1079733621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1079733621'><pre>java.lang.NullPointerException
+	at com.hubspot.listeners.ExtentReportListener.onTestFailure(ExtentReportListener.java:95)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1693)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>15</td>
+<td>com.hubspot.tests.LoginPageTest@473b3b7a</td></tr>
 </table><p>
 </body>
 </html>

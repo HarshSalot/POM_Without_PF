@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Hub Spot Test Suite" verbose="1" thread-count="3" parallel="methods">
+<suite name="Hub Spot Test Suite" verbose="1">
 
 	<listeners>
 		<listener class-name="com.hubspot.listeners.TestAllureListener" />
 	</listeners>
 
-	<test name="hub spot regression Test" thread-count="3" parallel="methods">
+	<test name="hub spot regression Test">
 		<classes>
 			<class name="com.hubspot.tests.LoginPageTest" />
 

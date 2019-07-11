@@ -7,42 +7,51 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.hubspot.pages.BasePage;
 import com.hubspot.util.Constants;
+import com.hubspot.util.DriverUtil;
 
-
-public class HomePage extends BasePage{
+public class HomePage extends BasePage {
 
 	WebDriver driver;
-	
-	//By Locators
+	DriverUtil driverUtil;
+
+	// By Locators
 	By homePageHeader = By.xpath("//h1[@class='private-page__title']");
 	By accountName = By.xpath("//span[@class='account-name ']");
 	By ContactsHoverMenu = By.id("nav-primary-contacts-branch");
 	By ContactsPage = By.id("nav-secondary-contacts");
-		
-		
+
 	public HomePage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver = driver;
+		driverUtil = new DriverUtil(driver);
 	}
-	
-	public String getHomePageTitle(){
+
+	public String getHomePageTitle() {
 		WebDriverWait wait = new WebDriverWait(driver, Constants.DEFAULT_EXPLICIT_WAIT_TIMEOUT);
 		wait.until(ExpectedConditions.titleContains(Constants.HOME_PAGE_TITLE));
 		return driver.getTitle();
 	}
-	
-	public String getHomePageHeader(){
+
+	public String getHomePageHeader() {
 		WebDriverWait wait = new WebDriverWait(driver, Constants.DEFAULT_EXPLICIT_WAIT_TIMEOUT);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(homePageHeader));
 		return driver.findElement(homePageHeader).getText();
 	}
-	
-	public String getLoggedInAccountValue(){
+
+	public String getLoggedInAccountValue() {
 		WebDriverWait wait = new WebDriverWait(driver, Constants.DEFAULT_EXPLICIT_WAIT_TIMEOUT);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(accountName));
 		return driver.findElement(accountName).getText();
 	}
-	
+
+	// check all links
+	public void getTotalLinks() {
+		driverUtil.getLinks();
+	}
+
+	// check all links
+	public void getBrokenLinks() {
+		driverUtil.brokenLinks();
+	}
 
 }
-

@@ -8,8 +8,8 @@
 	
   <test name="hub spot regression Test">
     <classes>
-      <class name="com.hotspot.tests.LoginPageTest"/>
-      <class name="com.hotspot.tests.HomePageTest"/>
+      <class name="com.hubspot.tests.LoginPageTest"/>
+      <class name="com.hubspot.tests.HomePageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

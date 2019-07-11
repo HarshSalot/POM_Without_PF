@@ -54,11 +54,15 @@ public class LoginPage extends BasePage {
 			
 		}
 		
-		//check all links
-		public void getTotalLinks(){
+		// check all links
+		public void getTotalLinks() {
 			driverUtil.getLinks();
 		}
-		
+
+		// check all links
+		public void getBrokenLinks() {
+			driverUtil.brokenLinks();
+		}
 		
 		
 		
